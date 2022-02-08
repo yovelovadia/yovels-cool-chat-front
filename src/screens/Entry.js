@@ -23,13 +23,13 @@ const Entry = ({ setUserNickname, setUserAvatar }) => {
 
   return (
     <EntryElement>
+      <img className="spongeBobImage" src={spongebob} alt="No" />
       <AvatarSelector avatar={avatar} handleAvatarPick={handleAvatarPick} />
       <h1>Write your nickname</h1>
       <Input className="textInput" onChange={handleOnChange} placeholder="Nickname" />
       <Button className="submitButton" variant="contained" onClick={handleOnSubmit}>
         Submit Nickname
       </Button>
-      <img className="spongeBobImage" src={spongebob} alt="No" />
     </EntryElement>
   );
 };

@@ -18,8 +18,6 @@ const EntryElement = styled(Container)`
   }
 
   .textInput {
-    z-index: 1;
-
     input {
       text-align: center;
     }
@@ -29,7 +27,6 @@ const EntryElement = styled(Container)`
     margin-top: 20px;
     box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.5);
     background: ${colors.GREEN_BLUE_LINEAR_GRADIENT};
-    z-index: 1;
   }
 
   .spongeBobImage {
@@ -37,6 +34,11 @@ const EntryElement = styled(Container)`
     width: 350px;
     bottom: 0;
   }
+
+  @media (max-width: 600px) {
+    .spongeBobImage {
+      width: 200px;
+    }
 `;
 
 export default EntryElement;
