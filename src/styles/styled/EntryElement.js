@@ -18,6 +18,8 @@ const EntryElement = styled(Container)`
   }
 
   .textInput {
+    z-index: 1;
+
     input {
       text-align: center;
     }
