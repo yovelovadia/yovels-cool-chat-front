@@ -35,7 +35,7 @@ const EntryElement = styled(Container)`
     bottom: 0;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     .spongeBobImage {
       width: 200px;
     }
